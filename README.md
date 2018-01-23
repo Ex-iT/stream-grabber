@@ -1,6 +1,6 @@
 # Stream grabber
 
-Fetches the current XML stream data from the Slam Non-stop live stream and writes it to an M3U file in the current user /Documents/ folder.
+Fetches the current XML stream data from the Slam Non-stop live stream and writes it to an M3U file in the current user `/Documents/` folder.
 
 ## Usage
 
