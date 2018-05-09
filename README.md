@@ -7,5 +7,5 @@ Fetches the current XML stream data from the Slam Non-stop live stream and write
 Install dependencies with `npm install` and run:
 
 ```
-$ node index.js
+$ npm run start
 ```
