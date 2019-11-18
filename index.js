@@ -3,7 +3,7 @@ const path = require('path');
 const fetch = require('node-fetch');
 const parser = require('xml2json');
 
-const url = `https://playerservices.streamtheworld.com/api/livestream?station=web10&transports=http%2Chls%2Chlsts&version=1.9&request.preventCache=${new Date().getTime()}`;
+const url = `https://playerservices.streamtheworld.com/api/livestream?station=SRGSTR07&transports=http%2Chls%2Chlsts&version=1.9&request.preventCache=${new Date().getTime()}`;
 const author = 'SLAM! - Non-Stop';
 const outputFile = path.join(process.env.HOME || process.env.USERPROFILE, 'Documents', 'Slam-non-stop.m3u');
 
@@ -27,6 +27,6 @@ function writeM3UFile(data, path) {
 			console.log(`[-] An error occured writing the file: ${err}`);
 			return;
 		}
-		console.log(`[+] Playlist saved to: ${outputFile}`);
+		console.log(`[+] Playlist saved to: ${path}`);
 	});
 }
